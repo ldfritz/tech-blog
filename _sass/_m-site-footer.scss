@@ -1,0 +1,22 @@
+.site-footer {
+  background-color: lighten($base-color, 20%);
+  border-top: 5px solid lighten($base-color, 40%);
+  color: lighten($base-color, 80%);
+}
+
+.site-footer__title {
+  font-size: 1em;
+}
+
+.site-footer__desc {
+  font-size: 0.8em;
+}
+
+.site-footer__copyright {
+  font-size: 0.8em;
+}
+
+.site-footer__rss a {
+  color: lighten($base-color, 80%);
+  font-size: 0.8em;
+}

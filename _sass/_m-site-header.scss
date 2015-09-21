@@ -1,0 +1,32 @@
+.site-header {
+  background-color: lighten($base-color, 20%);
+  border-bottom: 5px solid lighten($base-color, 40%);
+}
+
+.site-header__title {
+  color: $bold-color;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.site-nav {
+}
+
+.site-nav__list {
+  list-style: none;
+}
+
+.site-nav__item {
+  font-size: 1.5em;
+}
+
+.site-nav__item:hover {
+}
+
+.site-nav__link {
+  color: lighten($base-color, 80%);
+  text-decoration: none;
+}

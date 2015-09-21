@@ -1,0 +1,35 @@
+.site-header {
+  min-height: 5em;
+  position: relative;
+  width: 100%;
+}
+
+.site-header__title {
+  bottom: 0;
+  left: 0;
+  padding: 0 0 0 16px;
+  position: absolute;
+}
+
+.site-nav {
+  bottom: 0;
+  padding: 0 16px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+.site-nav__list {
+  margin: 0;
+}
+
+.site-nav__item {
+  display: inline-block;
+}
+
+.site-nav__item:hover {
+}
+
+.site-nav__link {
+  color: lighten($base-color, 80%);
+  text-decoration: none;
+}
