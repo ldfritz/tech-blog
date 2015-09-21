@@ -1,0 +1,17 @@
+title: Luke Fritz
+description: >
+  Articles about projects I am working on, noteworthy resources I have
+  encountered, and my observations and learning about programming.
+url: "http://lukeandkrista.com"
+baseurl: "/tech"
+permalink: :title
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      type: "posts"
+    values:
+      layout: "post"
