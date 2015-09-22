@@ -1,7 +1,6 @@
 .site-footer {
-  background-color: lighten($base-color, 20%);
-  border-top: 5px solid lighten($base-color, 40%);
-  color: lighten($base-color, 80%);
+  background-color: lighten($base-color, 60%);
+  border-top: 5px solid lighten($base-color, 80%);
 }
 
 .site-footer__title {
@@ -17,6 +16,6 @@
 }
 
 .site-footer__rss a {
-  color: lighten($base-color, 80%);
+  color: $base-color;
   font-size: 0.8em;
 }

@@ -2,18 +2,16 @@
 layout: default
 ---
 <article class="post">
-  <header class="post-header">
-    {% if page.img %}<img class="post-header__img" src="{{ page.img[0] }}" alt="{{ page.img[1] }}">{% endif %}
-    <h1 class="post-header__title">{{ page.title }}</h1>
-    <ul class="post-details">
-      <li class="post-details__date">{{ page.date | date: "%b %-d, %Y" }}</li>
-      <li class="post-details__author">{{ page.author }}</li>
-      {% if page.meta %}<li class="post-details__meta">{{ page.meta }}</li>{% endif %}
-    </ul>
+  <header class="post__header">
+    {% if page.img %}<img class="post__header-img" src="{{ page.img[0] }}" alt="{{ page.img[1] }}">{% endif %}
+    <h1 class="post__title typl8-mega">{{ page.title }}</h1>
   </header>
-  <div class="post-content">
+  <div class="post__content">
     {{ content }}
   </div>
-  <footer class="post-footer">
+  <footer class="post__footer">
+    <div class="post__date">{{ page.date | date: "%b %-d, %Y" }}</div>
+    <div class="post__author">{{ page.author }}</div>
+    {% if page.meta %}<div class="post__meta">{{ page.meta }}</div>{% endif %}
   </footer>
 </article>

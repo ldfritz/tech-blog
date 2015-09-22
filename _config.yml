@@ -6,6 +6,7 @@ url: "http://lukeandkrista.com"
 baseurl: "/tech"
 permalink: :title
 markdown: kramdown
+excerpt_separator: <!--more-->
 defaults:
   - scope:
       path: ""

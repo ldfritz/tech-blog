@@ -5,11 +5,11 @@ layout: default
   <ul class="post-list__list">
     {% for post in site.posts %}
       <li class="post-list__item">
-        <h2 class="post-list__item-title">
+        <h2 class="post-list__item-title typl8-alpha">
           <a class="post-list__item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <span class="post-list__item-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <div class="post-list__excerpt">{{ post.excerpt }}</div>
+        <span class="post-list__item-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
       </li>
     {% endfor %}
   </ul>

@@ -1,14 +1,37 @@
-.post {
+.post__content p {
+  max-width: 60%;
 }
 
-.post-header {
+.post__title {
+  padding-top: 1em;
 }
 
-.post-header__img {
-  max-width: 111.1111%;
-  margin-left: -5.5555%;
+.post__content {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
-.post-content img {
-  max-width: 80%;
+.post__date {
+  width: 60%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.post__date:before {
+  content: "Published on "
+}
+
+.post__author {
+  width: 60%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.post__author:before {
+  content: "By "
+}
+
+.post img {
+  margin: 2em 0;
+  max-width: 95%;
 }

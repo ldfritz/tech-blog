@@ -1,9 +1,18 @@
-.post-list {
-}
-
 .post-list__list {
   padding: 0;
 }
 
+.post-list__item {
+  margin: 5em 0;
+}
+
 .post-list__item-title > a {
+}
+
+.post-list__excerpt {
+  width: 60%;
+}
+
+.post-list__excerpt p:last-of-type {
+  margin-bottom: 0;
 }
