@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="post">
+<article class="post">
   <header class="post-header">
     {% if page.img %}<img class="post-header__img" src="{{ page.img[0] }}" alt="{{ page.img[1] }}">{% endif %}
     <h1 class="post-header__title">{{ page.title }}</h1>
@@ -11,9 +11,9 @@ layout: default
       {% if page.meta %}<li class="post-details__meta">{{ page.meta }}</li>{% endif %}
     </ul>
   </header>
-  <article class="post-content">
+  <div class="post-content">
     {{ content }}
-  </article>
+  </div>
   <footer class="post-footer">
   </footer>
-</section>
+</article>
