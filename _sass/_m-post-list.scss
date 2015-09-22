@@ -13,3 +13,7 @@
 .post-list__item-link:visited {
   color: lighten($bold-color, 10%);
 }
+
+.post-list__item-link:hover {
+  color: $bold-color;
+}

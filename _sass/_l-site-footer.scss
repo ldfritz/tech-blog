@@ -1,14 +1,16 @@
 .site-footer {
   min-height: 3em;
   width: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 5%;
 }
 
 .site-footer__title {
+  display: inline-block;
+  padding-right: 1em;
 }
 
 .site-footer__desc {
+  display: inline-block;
 }
 
 .site-footer__copyright {

@@ -15,7 +15,22 @@
   font-size: 0.8em;
 }
 
-.site-footer__rss a {
+.site-map__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.site-map__item {
+  display: inline;
+  padding-right: 1em;
+}
+
+.site-map a {
   color: $base-color;
   font-size: 0.8em;
+  text-decoration: none;
+}
+
+.site-map a:hover {
+  color: lighten($bold-color, 15%);
 }

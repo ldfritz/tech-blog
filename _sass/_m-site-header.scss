@@ -30,3 +30,7 @@
   color: lighten($base-color, 80%);
   text-decoration: none;
 }
+
+.site-nav__link:hover {
+  color: lighten($bold-color, 15%);
+}
