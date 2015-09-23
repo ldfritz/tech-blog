@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'cormorantregular';
+  src: url('http://lukeandkrista.com/tech/fonts/cormorant/cormorant-regular-webfont.eot');
+  src: url('http://lukeandkrista.com/tech/fonts/cormorant/cormorant-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://lukeandkrista.com/tech/fonts/cormorant/cormorant-regular-webfont.woff2') format('woff2'),
+       url('http://lukeandkrista.com/tech/fonts/cormorant/cormorant-regular-webfont.woff') format('woff'),
+       url('http://lukeandkrista.com/tech/fonts/cormorant/cormorant-regular-webfont.ttf') format('truetype'),
+       url('http://lukeandkrista.com/tech/fonts/cormorant/cormorant-regular-webfont.svg#cormorantregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arconregular';
+  src: url('http://lukeandkrista.com/tech/fonts/arcon/arcon-regular-webfont.eot');
+  src: url('http://lukeandkrista.com/tech/fonts/arcon/arcon-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://lukeandkrista.com/tech/fonts/arcon/arcon-regular-webfont.woff2') format('woff2'),
+       url('http://lukeandkrista.com/tech/fonts/arcon/arcon-regular-webfont.woff') format('woff'),
+       url('http://lukeandkrista.com/tech/fonts/arcon/arcon-regular-webfont.ttf') format('truetype'),
+       url('http://lukeandkrista.com/tech/fonts/arcon/arcon-regular-webfont.svg#arconregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$title-font: "cormorantregular";
+$body-font: "arconregular";
+
+body {
+  font-family: $body-font, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font, serif;
+  font-weight: normal;
+}
