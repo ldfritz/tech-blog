@@ -1,16 +1,11 @@
 .site-header {
-  background-color: lighten($base-color, 40%);
-  border-bottom: 15px solid lighten($base-color, 80%);
-  border-top: 15px solid lighten($base-color, 80%);
+  background-color: $light-color;
 }
 
 .site-header__title a {
-  color: $bold-color;
+  color: $primary-color;
   line-height: 1em;
   text-decoration: none;
-}
-
-.site-nav {
 }
 
 .site-nav__list {
@@ -19,16 +14,17 @@
 
 .site-nav__item {
   font-size: 1.5em;
-}
-
-.site-nav__item:hover {
+  background-color: $white-color;
 }
 
 .site-nav__link {
-  color: lighten($base-color, 80%);
+  color: $dark-color;
   text-decoration: none;
-}
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
 
-.site-nav__link:hover {
-  color: lighten($bold-color, 15%);
+  &:hover {
+    color: $primary-color;
+  }
 }

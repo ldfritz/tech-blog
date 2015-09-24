@@ -3,10 +3,15 @@
 @import "typeplate";
 @import "fonts";
 
+$white-color: rgb(235, 238, 236);  //chalk white
+$light-color: rgb(214, 214, 209);  //whisper
+$primary-color: rgb(210, 115, 38); //carrot
+$dark-color: rgb(107, 106, 104);   //burnt ember
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: lighten($base-color, 95%);
+  background-color: $white-color;
 }

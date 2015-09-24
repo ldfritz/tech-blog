@@ -2,7 +2,12 @@
   border: 10px solid white;
 }
 
+.post__content pre {
+  background-color: $dark-color;
+}
+
 .post code {
-  font-family: monospace;
-  background-color: lighten($base-color, 95%);
+  color: $light-color;
+  background-color: $dark-color;
+  word-wrap: normal;
 }

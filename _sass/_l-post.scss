@@ -1,5 +1,15 @@
-.post__content p {
+@mixin narrow-content {
   max-width: 60%;
+  margin: 0 auto;
+}
+
+.post__content p {
+  @include narrow-content;
+}
+
+.post__content pre {
+  @include narrow-content;
+  padding-left: 1em;
 }
 
 .post__title {
@@ -12,8 +22,7 @@
 }
 
 .post__date {
-  width: 60%;
-  margin: 0 auto;
+  @include narrow-content;
   text-align: right;
 }
 
@@ -22,8 +31,7 @@
 }
 
 .post__author {
-  width: 60%;
-  margin: 0 auto;
+  @include narrow-content;
   text-align: right;
 }
 
@@ -32,6 +40,6 @@
 }
 
 .post img {
-  margin: 2em 0;
+  margin: 2em auto;
   max-width: 95%;
 }
