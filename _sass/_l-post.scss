@@ -1,14 +1,22 @@
-@mixin narrow-content {
-  max-width: 60%;
+$narrow_width: 60%;
+@mixin narrow {
+  max-width: $narrow_width;
+}
+
+@mixin centered {
   margin: 0 auto;
 }
 
-.post__content p {
-  @include narrow-content;
+@mixin aligned_with_narrow_centered {
+  margin-left: (100% - $narrow_width) / 2;
+}
+
+.post__content {
+  @include narrow;
+  @include centered;
 }
 
 .post__content pre {
-  @include narrow-content;
   padding-left: 1em;
 }
 
@@ -22,7 +30,8 @@
 }
 
 .post__date {
-  @include narrow-content;
+  @include narrow;
+  @include aligned_with_narrow_centered;
   text-align: right;
 }
 
@@ -31,7 +40,8 @@
 }
 
 .post__author {
-  @include narrow-content;
+  @include narrow;
+  @include aligned_with_narrow_centered;
   text-align: right;
 }
 
