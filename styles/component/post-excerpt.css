@@ -1,0 +1,64 @@
+body > section:before,
+.PostExcerpt-title::before,
+.PostExcerpt-excerpt::before,
+.PostExcerpt-date::before {
+  color: gray;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+body > section:before {
+  content: 'posts:';
+  margin-left: 0;
+}
+
+.PostExcerpt-title {
+  margin: 0;
+  padding: 0;
+}
+
+.PostExcerpt-title::before {
+  content: '- title:';
+  margin-left: 1rem;
+}
+
+.PostExcerpt-excerpt::before {
+  content: 'excerpt: >';
+  margin-left: 1.55rem;
+}
+
+.PostExcerpt-date::before {
+  content: 'date:';
+  margin-left: 1.55rem;
+}
+
+.PostExcerpt-title > a:link,
+.PostExcerpt-title > a:visited,
+.PostExcerpt-title > a:hover,
+.PostExcerpt-title > a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.PostExcerpt-excerpt > p {
+  margin-left: 3rem;
+}
+
+.PostExcerpt-excerpt > p + p {
+  margin-top: 1rem;
+}
+
+/*
+<article class='PostExcerpt'>
+  <header>
+    <h1 class='PostExcerpt-title'>
+      <a href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
+    </h1>
+  </header>
+  <section class='PostExcerpt-excerpt'>{{ post.excerpt }}</section>
+  <footer>
+    <span class='PostExcerpt-date'>{{ post.date | date: "%b %-d, %Y" }}</span>
+  </footer>
+</article>
+*/

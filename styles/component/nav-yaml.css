@@ -1,0 +1,28 @@
+.NavYaml {
+}
+
+.NavYaml:before {
+  content: 'menu:';
+  display: block;
+}
+
+.NavYaml > ul {
+  list-style: none;
+}
+
+.NavYaml-item:before {
+  content: '-';
+  display: inline-block;
+  width: 1rem;
+  margin-left: 1rem;
+}
+
+.NavYaml-item {
+}
+
+.NavYaml-item > a:link,
+.NavYaml-item > a:visited,
+.NavYaml-item > a:hover,
+.NavYaml-item > a:active {
+  text-decoration: none;
+}
