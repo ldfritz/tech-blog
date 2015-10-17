@@ -4,6 +4,7 @@
 .NavYaml:before {
   content: 'menu:';
   display: block;
+  color: gray;
 }
 
 .NavYaml > ul {
@@ -15,6 +16,7 @@
   display: inline-block;
   width: 1rem;
   margin-left: 1rem;
+  color: gray;
 }
 
 .NavYaml-item {
@@ -25,4 +27,6 @@
 .NavYaml-item > a:hover,
 .NavYaml-item > a:active {
   text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
 }
