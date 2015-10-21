@@ -1,0 +1,72 @@
+.Page::before {
+  color: gray;
+  content: 'content:';
+  display: block;
+  font-family: Courier;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.Page {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Page > * {
+  margin-left: 2rem;
+}
+
+.Page > * + * {
+  margin-top: 1rem;
+}
+
+.Page > h2::before {
+  color: gray;
+  content: '# ';
+  font-size: 0.75em;
+}
+
+.Page > h2 {
+  margin-top: 1rem;
+}
+
+.Page ul {
+  list-style: none;
+}
+
+.Page li::before {
+  color: gray;
+  content: '- ';
+  font-size: 0.75em;
+}
+
+.Page li + li {
+  margin-top: 0.5rem;
+}
+
+.Page a:link,
+.Page a:visited {
+  color: gray;
+}
+
+.Page a:link::before,
+.Page a:visited::before {
+  color: gray;
+  content: '(';
+}
+
+.Page a:link::after,
+.Page a:visited::after {
+  color: gray;
+  content: ')[' attr(href) ']';
+}
+
+.Page a:hover,
+.Page a:active,
+.Page a:hover::before,
+.Page a:active::before,
+.Page a:hover::after,
+.Page a:active::after {
+  color: gray;
+  color: black;
+}
