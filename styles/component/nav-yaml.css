@@ -1,32 +1,48 @@
 .NavYaml {
+  font-family: Courier;
+  margin: 2rem;
 }
 
-.NavYaml:before {
-  content: 'menu:';
-  display: block;
+.NavYaml::before {
   color: gray;
+  content: 'menu: [';
+  display: inline-block;
+  font-size: 0.75rem;
 }
 
 .NavYaml > ul {
+  display: inline-block;
   list-style: none;
 }
 
-.NavYaml-item:before {
-  content: '-';
-  display: inline-block;
-  width: 1rem;
-  margin-left: 1rem;
+.NavYaml::after {
   color: gray;
+  content: ']';
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.NavYaml-item + .NavYaml-item::before {
+  color: gray;
+  content: ',';
+  display: inline-block;
+  font-size: 0.75rem;
 }
 
 .NavYaml-item {
+  display: inline-block;
+  font-family: Courier;
+  font-weight: bold;
 }
 
 .NavYaml-item > a:link,
-.NavYaml-item > a:visited,
-.NavYaml-item > a:hover,
-.NavYaml-item > a:active {
-  text-decoration: none;
+.NavYaml-item > a:visited {
   color: black;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.NavYaml-item > a:hover,
+.NavYaml-item > a:active {
+  color: gray;
 }
