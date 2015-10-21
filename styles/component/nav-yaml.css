@@ -1,6 +1,14 @@
+body > header::before {
+  color: gray;
+  content: "---";
+  font-size: 5rem;
+  line-height: 1rem;
+  margin-left: 2rem;
+}
+
 .NavYaml {
   font-family: Courier;
-  margin: 2rem;
+  margin: 0 2rem 2rem 2rem;
 }
 
 .NavYaml::before {
