@@ -1,0 +1,72 @@
+.PostExcerpts:before,
+.PostExcerpt-title::before,
+.PostExcerpt-excerpt::before,
+.PostExcerpt-date::before {
+  color: gray;
+  display: inline-block;
+  font-family: Courier;
+  font-size: 0.75rem;
+  font-weight: normal;
+  width: 3.75rem;
+}
+
+.PostExcerpts {
+  margin: 2rem;
+}
+
+.PostExcerpts:before {
+  content: 'posts:';
+  margin-left: 0;
+}
+
+.PostExcerpt {
+  margin: 1rem;
+}
+
+.PostExcerpt + .PostExcerpt {
+  margin-top: 3rem;
+}
+
+.PostExcerpt-title {
+  margin: 0;
+  padding: 0;
+}
+
+.PostExcerpt-title::before {
+  content: '- title:';
+  margin-left: 1rem;
+}
+
+.PostExcerpt-excerpt::before {
+  content: 'excerpt: >';
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  width: 5rem;
+}
+
+.PostExcerpt-date::before {
+  content: 'date:';
+  margin-left: 2rem;
+  width: 3rem;
+}
+
+.PostExcerpt-title > a:link,
+.PostExcerpt-title > a:visited,
+.PostExcerpt-title > a:hover,
+.PostExcerpt-title > a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.PostExcerpt-excerpt > p {
+  margin-left: 3.55rem;
+  max-width: 65%;
+}
+
+.PostExcerpt > * + * {
+  margin-top: 1rem;
+}
+
+.PostExcerpt-excerpt > p + p {
+  margin-top: 1rem;
+}

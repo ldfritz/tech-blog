@@ -1,0 +1,12 @@
+body > footer {
+  margin-left: 2rem;
+  font-size: 0.75rem;
+}
+
+.Copyright::before {
+  color: gray;
+  content: 'copyright: ';
+  display: inline-block;
+  font-family: Courier;
+  width: 6rem;
+}

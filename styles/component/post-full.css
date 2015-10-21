@@ -1,0 +1,104 @@
+.Post::before {
+  color: gray;
+  content: 'post:';
+  display: block;
+  font-family: Courier;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.Post {
+  margin-left: 2rem;
+}
+
+.Post-title::before {
+  color: gray;
+  content: '# ';
+  font-size: 0.75em;
+  margin-left: 2rem;
+}
+
+.Post-content {
+  margin-left: 2rem;
+  max-width: 65%;
+}
+
+.Post p + p {
+  margin-top: 1rem;
+}
+
+.Post p > code::before,
+.Post p > code::after {
+  color: gray;
+  content: '`';
+  font-size: 0.75em;
+}
+
+.Post pre {
+  margin: 1rem 0 1rem 2rem;
+}
+
+.Post ul {
+  list-style: none;
+  margin: 1rem;
+}
+
+.Post li::before {
+  color: gray;
+  content: '- ';
+  font-size: 0.75em;
+}
+
+.Post li + li {
+  margin-top: 0.5rem;
+}
+
+.Post > footer {
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+
+.Post-date::before,
+.Post-author::before {
+  color: gray;
+  display: inline-block;
+  font-family: Courier;
+  font-size: 0.75rem;
+  font-weight: normal;
+  width: 6rem;
+}
+
+.Post-date::before {
+  content: 'date:';
+}
+
+.Post-author::before {
+  content: 'author:';
+}
+
+.Post a:link,
+.Post a:visited {
+  color: gray;
+}
+
+.Post a:link::before,
+.Post a:visited::before {
+  color: gray;
+  content: '(';
+}
+
+.Post a:link::after,
+.Post a:visited::after {
+  color: gray;
+  content: ')[' attr(href) ']';
+}
+
+.Post a:hover,
+.Post a:active,
+.Post a:hover::before,
+.Post a:active::before,
+.Post a:hover::after,
+.Post a:active::after {
+  color: gray;
+  color: black;
+}

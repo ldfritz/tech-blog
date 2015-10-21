@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-<section class="post-list">
-  <ul class="post-list__list">
-    {% for post in site.posts %}
-      <li class="post-list__item">
-        <h2 class="post-list__item-title typl8-alpha">
-          <a class="post-list__item-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <div class="post-list__excerpt">{{ post.excerpt }}</div>
-        <span class="post-list__item-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="PostExcerpts">
+{% for post in site.posts %}
+  <article class='PostExcerpt'>
+    <header>
+      <h1 class='PostExcerpt-title'>
+        <a href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
+      </h1>
+    </header>
+    <section class='PostExcerpt-excerpt'>{{ post.excerpt }}</section>
+    <footer>
+      <span class='PostExcerpt-date'>{{ post.date | date: "%b %-d, %Y" }}</span>
+    </footer>
+  </article>
+{% endfor %}
 </section>

@@ -1,0 +1,56 @@
+body > header::before {
+  color: gray;
+  content: "---";
+  font-size: 5rem;
+  line-height: 1rem;
+  margin-left: 2rem;
+}
+
+.NavYaml {
+  font-family: Courier;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.NavYaml::before {
+  color: gray;
+  content: 'menu: [';
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.NavYaml > ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.NavYaml::after {
+  color: gray;
+  content: ']';
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.NavYaml-item + .NavYaml-item::before {
+  color: gray;
+  content: ',';
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.NavYaml-item {
+  display: inline-block;
+  font-family: Courier;
+  font-weight: bold;
+}
+
+.NavYaml-item > a:link,
+.NavYaml-item > a:visited {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.NavYaml-item > a:hover,
+.NavYaml-item > a:active {
+  color: gray;
+}
