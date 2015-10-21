@@ -1,5 +1,6 @@
 body > footer {
   margin-left: 2rem;
+  font-size: 0.75rem;
 }
 
 .Copyright::before {
@@ -7,6 +8,5 @@ body > footer {
   content: 'copyright: ';
   display: inline-block;
   font-family: Courier;
-  font-size: 0.75rem;
   width: 6rem;
 }
