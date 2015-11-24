@@ -39,6 +39,10 @@
   content: '## ';
 }
 
+.Page > p {
+  max-width: 65%;
+}
+
 .Page ul {
   list-style: none;
 }
