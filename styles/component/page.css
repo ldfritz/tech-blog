@@ -1,6 +1,6 @@
 .Page::before {
   color: gray;
-  content: 'content:';
+  content: 'content: >';
   display: block;
   font-family: Courier;
   font-size: 0.75rem;
@@ -20,14 +20,23 @@
   margin-top: 1rem;
 }
 
-.Page > h2::before {
+.Page > h2::before,
+.Page > h3::before {
   color: gray;
-  content: '# ';
   font-size: 0.75em;
 }
 
-.Page > h2 {
+.Page > h2,
+.Page > h3 {
   margin-top: 1rem;
+}
+
+.Page > h2::before {
+  content: '# ';
+}
+
+.Page > h3::before {
+  content: '## ';
 }
 
 .Page ul {
