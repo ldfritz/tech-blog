@@ -7,7 +7,7 @@ baseurl: "/tech"
 permalink: :title
 markdown: kramdown
 excerpt_separator: <!--more-->
-exclude: ["Gemfile*"]
+exclude: ["Gemfile*", "destination", "upload.rb"]
 defaults:
   - scope:
       path: ""
