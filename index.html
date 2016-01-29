@@ -1,18 +1,32 @@
 ---
 layout: default
 ---
-<section class="PostExcerpts">
-{% for post in site.posts %}
-  <article class='PostExcerpt'>
-    <header>
-      <h1 class='PostExcerpt-title'>
-        <a href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
-      </h1>
-    </header>
-    <section class='PostExcerpt-excerpt'>{{ post.excerpt }}</section>
-    <footer>
-      <span class='PostExcerpt-date'>{{ post.date | date: "%b %-d, %Y" }}</span>
-    </footer>
+<section class="About">
+  <img src="" alt="Headshot of Luke">
+  <h2>Luke Fritz</h2>
+  <p>I am a software and web developer in Meadville, Pennsylvania.</p>
+</section>
+
+<section class="Articles">
+  <h2>Articles</h2>
+
+  <article class="Article--first">
+    {% assign first_post = site.posts.first %}
+    <h1 class="Article-title--first">
+      <a href="{{ first_post.url | prepend: site.baseurl }}">{{ first_post.title }}</a>
+    </h1>
+    <div class="Article-content--first">
+      {{ first_post.content }}
+    </div>
   </article>
-{% endfor %}
+
+  <ul class="Article-list">
+  {% for post in site.posts %}
+    {% if post == first_post %}{% else %}<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>{% endif %}
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="Projects">
+  <h2>Projects</h2>
 </section>
